@@ -37,7 +37,9 @@ function init() {
   north = map[y - 1][x];
   console.log(map[y - 1][x]);
   south = map[y + 1][x];
+  console.log(map[y + 1][x]);
   east = map[y][x + 1];
+  console.log(map[y][x + 1])
   west = map[y][x + 1];
   northwest = map[y - 1][x - 1];
   northeast = map[y - 1][x + 1];
