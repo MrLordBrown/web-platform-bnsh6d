@@ -42,7 +42,7 @@ function init() {
   west = map[y][x + 1];
   northwest.innerHTML = map[y - 1][x - 1];
   northeast.innerHTML = map[y - 1][x + 1];
-  read.innerHTML = texty.charLoc;
+  read.innerHTML = 'a';
   console.log(read);
 }
 function getCommand(event) {
