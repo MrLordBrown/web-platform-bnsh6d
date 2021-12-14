@@ -9,6 +9,7 @@ body {
 
 #container {
   font-size: large;
+  font-family: 'little_city_2000regular',serif;
   display: grid;
   grid-template-areas:
     'v pop'

@@ -43,6 +43,7 @@ function init() {
   northwest.innerHTML = map[y - 1][x - 1];
   northeast.innerHTML = map[y - 1][x + 1];
   read.innerHTML = texty.charLoc;
+  console.log(read);
 }
 function getCommand(event) {
   var key = event.keyCode;
