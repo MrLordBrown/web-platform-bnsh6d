@@ -22,12 +22,12 @@ var x = 2;
 var y = 2;
 var charLoc = map[y][x];
 
-var north = document.getElementById('n');
-var south = document.getElementById('s');
-var east = document.getElementById('e');
-var west = document.getElementById('w');
-var northwest = document.getElementById('nw');
-var northeast = document.getElementById('ne');
+var north = document.getElementById('n').innerHTML;
+var south = document.getElementById('s').innerHTML;
+var east = document.getElementById('e').innerHTML;
+var west = document.getElementById('w').innerHTML;
+var northwest = document.getElementById('nw').innerHTML;
+var northeast = document.getElementById('ne').innerHTML;
 
 var read = document.getElementById('reader');
 
@@ -36,13 +36,15 @@ console.log(charLoc);
 var n = 'go north' || 'north' || 'n';
 
 function init() {
-  north.innerHTML = map[y - 1][x];
+  north = map[y - 1][x];
+  console.log(map[y - 1][x]);
   south = map[y + 1][x];
   east = map[y][x + 1];
   west = map[y][x + 1];
-  northwest.innerHTML = map[y - 1][x - 1];
-  northeast.innerHTML = map[y - 1][x + 1];
+  northwest = map[y - 1][x - 1];
+  northeast = map[y - 1][x + 1];
   read.innerHTML = 'a';
+  console.log(read);
   console.log(read);
 }
 function getCommand(event) {
