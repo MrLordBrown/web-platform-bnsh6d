@@ -4,7 +4,7 @@
     <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
-  <body>
+  <body onload="init()">
     <h1 id="name"></h1>
     <div id="container">
     <section id="viewer">
@@ -14,8 +14,8 @@
     <div id="ne">ne</div>
     <div id="nw">nw</div>
     </section>
-    <section id="reader">reader</section>
-    <section id="command">command</section>
+    <section id="reader"></section>
+    <input type="text" id="command" onkeyup="getCommand(event)">command</section>
       <div id="pop">peeps</div>
       <div id="map">maps</div>
     </div>

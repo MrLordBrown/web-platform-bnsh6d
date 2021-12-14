@@ -8,23 +8,26 @@ body {
 }
 
 #container {
+  font-size: large;
   display: grid;
-  grid-template-areas: "v pop"
-                        "r map"
-                        "c map";
+  grid-template-areas:
+    'v pop'
+    'r map'
+    'c map';
   grid-template-columns: 74vw 25vw;
-  grid-template-rows: 74vh 15vh 10vh; 
+  grid-template-rows: 74vh 15vh 10vh;
   border: 2px solid black;
 }
 
 #viewer {
   display: inline-grid;
   grid-area: v;
-  grid-template-areas: "nw n ne"
-                        "w n e"
-                        "w me e";
-                        grid-template-columns: 25% 50% 25%;
-                        grid-template-rows: 25% 50% 25%;
+  grid-template-areas:
+    'nw n ne'
+    'w n e'
+    'w me e';
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 25% 50% 25%;
   border: 2px solid black;
   align-items: center;
   justify-items: center;
