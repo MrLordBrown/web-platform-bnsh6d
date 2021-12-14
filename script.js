@@ -33,8 +33,6 @@ var read = document.getElementById('reader');
 
 console.log(charLoc);
 
-var n = 'go north' || 'north' || 'n';
-
 function init() {
   north = map[y - 1][x];
   console.log(map[y - 1][x]);
