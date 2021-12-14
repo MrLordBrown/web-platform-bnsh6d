@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'little city';
+  src: url('./littlecity2000-rvpm-webfont.woff2');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +14,7 @@ body {
 
 #container {
   font-size: large;
-  font-family: 'little_city_2000regular',serif;
+  font-family: 'little city', serif;
   display: grid;
   grid-template-areas:
     'v pop'
