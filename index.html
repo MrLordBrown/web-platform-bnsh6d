@@ -1,4 +1,4 @@
-<html>
+<html onload="init()" >
   <head>
     <meta charset="UTF-8">
   
@@ -6,13 +6,13 @@
   </head>
   <body">
     <h1 id="name"></h1>
-    <div  onload="init()" id="container">
+    <div  id="container">
     <section id="viewer">
-    <div id="n">north</div>
-    <div id="w">west</div>
-    <div id="e">east</div>
-    <div id="ne">ne</div>
-    <div id="nw">nw</div>
+    <div id="n"></div>
+    <div id="w"></div>
+    <div id="e"></div>
+    <div id="ne"></div>
+    <div id="nw"></div>
     </section>
     <section id="reader"></section>
     <input type="text" id="command" onkeyup="getCommand(event)">command</section>

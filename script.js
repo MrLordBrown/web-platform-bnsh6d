@@ -36,7 +36,7 @@ console.log(charLoc);
 var n = 'go north' || 'north' || 'n';
 
 function init() {
-  north = map[y - 1][x];
+  north.innerHTML = map[y - 1][x];
   south = map[y + 1][x];
   east = map[y][x + 1];
   west = map[y][x + 1];
